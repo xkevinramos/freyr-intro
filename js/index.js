@@ -21,4 +21,3 @@ for(let i = 0; i < skills.length; i++) {
     skill.innerText = skills[i]
     skillsList.appendChild(skill);
 }
-
