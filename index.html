@@ -44,6 +44,28 @@
             </ul>
         </section>
 
+        <!--Message Form-->
+        <section>
+            <h2>Leave a Message</h2>
+            <form name="leave_message" id="messageForm">
+                <label for="usersName">Name</label><br>
+                <input type="text" name="usersName" required><br>
+                
+                <label for="usersEmail">Email Address</label><br>
+                <input type="email" name="usersEmail" required><br>
+
+                <label for="usersMessage">Message</label><br>
+                <textarea name="usersMessage" required></textarea><br>
+
+                <button type="submit" required>Submit</button>
+            </form>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
+        </section>
+        
         <footer></footer>
 
         <script src="js/index.js"></script>
