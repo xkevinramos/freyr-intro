@@ -3,41 +3,36 @@
     <head>
         <title>Kevin's Portfolio</title>
         <meta name="description" content="A portfolio showcasing my projects">
+        <link rel="stylesheet" href="css/index.css"/>
     </head>
     
     <body>
-        <section>
-            <h1>About</h1>
+        <section id="about">
+            <h1 id="heading">About</h1>
             <p>I am Kevin Ramos from Los Angeles, California. I received a Bachelor's degree in Bioinformatics from the University of California, San Diego. I am an aspiring front-end developer with a passion in web design that is accessible and minimalist.</p>
         </section>
         
-        <section>
-            <h1>Experience</h1>
+        <section id="experience">
+            <h1 id="heading">Experience</h1>
             <ul>
                 <li>
-                    Lead Tutor, Paper Education
-                    <ul>
-                        <li>Tutor elementary and advanced Mathematics, Biology, and Computer Science to students from grades K-12.</li>
-                    </ul>
+                    Lead Tutor, Paper Education - Tutor elementary and advanced Mathematics, Biology, and Computer Science to students from grades K-12.
                 </li>
 
                 <li>
-                    Community Service Officer, UCSD Police Department
-                    <ul>
-                        <li>Led a group of approximately 25 Community Service Officers to complete the day's objectives through coaching, counseling, and disciplining on a nightly basis.</li>
-                    </ul>
+                    Community Service Officer, UCSD Police Department - Led a group of approximately 25 Community Service Officers to complete the day's objectives through coaching, counseling, and disciplining on a nightly basis.
                 </li>
 
             </ul>
         </section>
         
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 id="heading">Skills</h2>
             <ul></ul>
         </section>
 
-        <section>
-            <h1>Connect</h1>
+        <section id="connect">
+            <h1 id="heading">Connect</h1>
             <ul>
                 <li>E-mail: kevin.ramos77@yahoo.com</li>
                 <li>Github: https://github.com/xkevinramos</li>
@@ -45,26 +40,29 @@
         </section>
 
         <!--Message Form-->
-        <section>
-            <h2>Leave a Message</h2>
-            <form name="leave_message" id="messageForm">
-                <label for="usersName">Name</label><br>
-                <input type="text" name="usersName" required><br>
-                
-                <label for="usersEmail">Email Address</label><br>
-                <input type="email" name="usersEmail" required><br>
+        <div class="message-section">
+            <section>
+                <h2 id="heading">Leave a Message</h2>
+                <form name="leave_message" id="messageForm">
+                    <label for="usersName">Name</label>
+                    <input type="text" name="usersName" required><br>
+                    
+                    <label for="usersEmail">Email Address</label>
+                    <input type="email" name="usersEmail" required><br>
 
-                <label for="usersMessage">Message</label><br>
-                <textarea name="usersMessage" required></textarea><br>
+                    <label for="usersMessage">Message</label>
+                    <textarea name="usersMessage" required></textarea><br>
 
-                <button type="submit" required>Submit</button>
-            </form>
-        </section>
+                    <button type="submit" id="submit-button" required>Submit</button>
+                </form>
+            </section>
+            
 
-        <section id="messages">
-            <h2>Messages</h2>
-            <ul></ul>
-        </section>
+            <section id="messages">
+                <h2 id="heading">Messages</h2>
+                <ul></ul>
+            </section>
+        </div>
         
         <footer></footer>
 

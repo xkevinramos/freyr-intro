@@ -1,0 +1,87 @@
+body {
+    background-color:#1F2937;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 12px;
+    margin-bottom: 12px;
+]}
+
+
+#about, #experience, #skills, #connect, .message-section {
+    background-color: rgb(120,120,120);
+    padding: 12px;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 75%;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 12px;
+
+}
+
+#about {
+    background-color: #6699CC;
+}
+
+#heading {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+#messageForm {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    background:#FFAC1C;
+    color: white;
+    border-radius: 12px;
+    padding: px 14px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#submit-button {
+    padding: 14px 28px;
+    font-size: 16px;
+    background:#0066FF;
+}
+
+footer {
+    padding: 12px;
+    width: 75%;
+    margin: auto;
+    background-color: #6699CC;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 12px;
+}
