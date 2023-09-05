@@ -4,7 +4,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 12px;
     margin-bottom: 12px;
-]}
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 
 #about, #experience, #skills, #connect, .message-section {
@@ -19,10 +22,6 @@ body {
 
 }
 
-#about {
-    background-color: #6699CC;
-}
-
 #heading {
     margin: 0px;
     font-size: 24px;
@@ -32,8 +31,9 @@ body {
 }
 
 ul {
-    padding-left: 0;
-    list-style-position: inside;
+    list-style: none;
+    display: flex;
+    gap: 16px;
 }
 
 li {
@@ -41,19 +41,35 @@ li {
 }
 
 #messageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
 input, textarea {
-    width: 100%;
+    width: 75%;
     padding: 12px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-sizing: border-box;
     text-align: center;
+}
+
+textarea {
+    height: 100px;
+}
+
+#messages ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 0px;
 }
 
 label {
@@ -63,9 +79,10 @@ label {
 button {
     background:#FFAC1C;
     color: white;
+    border: 3px solid rgb(120,120,120);
     border-radius: 12px;
-    padding: px 14px;
-    font-size: 12px;
+    padding: 8px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -85,3 +102,95 @@ footer {
     border: 3px solid white;
     border-radius: 12px;
 }
+
+.header-top {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+#link-style {
+    padding: 0;
+}
+
+.header-logo {
+    border: 2px solid;
+    border-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.header-links {
+    display: flex;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightblue;
+    text-decoration: none;
+
+  }
+
+#list-format {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 40px;
+}
+
+#list-format li {
+    flex: 1 1 0;
+    padding: 8px;
+    background: #6699CC;
+    border-radius: 12px;
+
+}
+
+#connect-format {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#connect-format li {
+    padding: 8px;
+    background: #6699CC;
+    border-radius: 12px;
+}
+
+.message-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#form, #messages {
+    width: 75%;
+}
+
+/* On mobile devices, make navigation bar links stack on top of each other */
+@media screen and (max-width: 600px) {
+    .header-links a {
+      float: none;
+      width: 100%;
+    }
+  }

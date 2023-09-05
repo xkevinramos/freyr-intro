@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Kevin's Portfolio</title>
-        <meta name="description" content="A portfolio showcasing my projects">
-        <link rel="stylesheet" href="css/index.css"/>
-    </head>
-    
-    <body>
-        <section id="about">
-            <h1 id="heading">About</h1>
-            <p>I am Kevin Ramos from Los Angeles, California. I received a Bachelor's degree in Bioinformatics from the University of California, San Diego. I am an aspiring front-end developer with a passion in web design that is accessible and minimalist.</p>
-        </section>
-        
-        <section id="experience">
-            <h1 id="heading">Experience</h1>
+
+<head>
+    <title>Kevin's Portfolio</title>
+    <meta name="description" content="A portfolio showcasing my projects">
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <!--First Section-->
+    <div class="header-top">
+        <div class="header-logo">
+            <h3>Kevin's Portfolio</h3>
+        </div>
+
+        <div class="header-links">
             <ul>
-                <li>
-                    Lead Tutor, Paper Education - Tutor elementary and advanced Mathematics, Biology, and Computer Science to students from grades K-12.
+                <li id="link-style">
+                    <a href="#about">About</a>
                 </li>
-
-                <li>
-                    Community Service Officer, UCSD Police Department - Led a group of approximately 25 Community Service Officers to complete the day's objectives through coaching, counseling, and disciplining on a nightly basis.
+                <li id="link-style">
+                    <a href="#experience">Experience</a>
                 </li>
-
+                <li id="link-style">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li id="link-style">
+                    <a href="#connect">Connect</a>
+                </li>
+                <li id="link-style">
+                    <a href="#form">Contact</a>
+                </li>
             </ul>
+        </div>
+    </div>
+
+    <section id="about">
+        <h1 id="heading">About</h1>
+        <p>I am Kevin Ramos from Los Angeles, California. I received a Bachelor's degree in Bioinformatics from the
+            University of California, San Diego. I am an aspiring front-end developer with a passion in web design that
+            is accessible and minimalist.</p>
+    </section>
+
+    <section id="experience">
+        <h1 id="heading">Experience</h1>
+        <ul id="list-format">
+            <li>
+                <b>Lead Tutor, Paper Education</b> <br> Tutor elementary and advanced Mathematics, Biology, and Computer
+                Science to students from grades K-12.
+            </li>
+
+            <li>
+                <b>Community Service Officer, UCSD Police Department</b> <br> Led a group of approximately 25 Community
+                Service Officers to complete the day's objectives through coaching, counseling, and disciplining on a
+                nightly basis.
+            </li>
+
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2 id="heading">Skills</h2>
+        <ul id="list-format"></ul>
+    </section>
+
+    <section id="connect">
+        <h1 id="heading">Connect</h1>
+        <ul id="list-format">
+            <li><a href="mailto:kevin.ramos77@yahoo.com">Email</a></li>
+            <li><a href="https://github.com/xkevinramos" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/kevin-a-ramos/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <!--Message Form-->
+    <div class="message-section">
+        <section id="form">
+            <h2 id="heading">Leave a Message</h2>
+            <form name="leave_message" id="messageForm">
+                <label for="usersName">Name</label>
+                <input type="text" name="usersName" required><br>
+
+                <label for="usersEmail">Email Address</label>
+                <input type="email" name="usersEmail" required><br>
+
+                <label for="usersMessage">Message</label>
+                <textarea name="usersMessage" required></textarea><br>
+
+                <button type="submit" id="submit-button" required>Submit</button>
+            </form>
         </section>
-        
-        <section id="skills">
-            <h2 id="heading">Skills</h2>
+
+
+        <section id="messages">
+            <h2 id="heading">Messages</h2>
             <ul></ul>
         </section>
+    </div>
 
-        <section id="connect">
-            <h1 id="heading">Connect</h1>
-            <ul>
-                <li>E-mail: kevin.ramos77@yahoo.com</li>
-                <li>Github: https://github.com/xkevinramos</li>
-            </ul>
-        </section>
+    <footer></footer>
 
-        <!--Message Form-->
-        <div class="message-section">
-            <section>
-                <h2 id="heading">Leave a Message</h2>
-                <form name="leave_message" id="messageForm">
-                    <label for="usersName">Name</label>
-                    <input type="text" name="usersName" required><br>
-                    
-                    <label for="usersEmail">Email Address</label>
-                    <input type="email" name="usersEmail" required><br>
+    <script src="js/index.js"></script>
+</body>
 
-                    <label for="usersMessage">Message</label>
-                    <textarea name="usersMessage" required></textarea><br>
-
-                    <button type="submit" id="submit-button" required>Submit</button>
-                </form>
-            </section>
-            
-
-            <section id="messages">
-                <h2 id="heading">Messages</h2>
-                <ul></ul>
-            </section>
-        </div>
-        
-        <footer></footer>
-
-        <script src="js/index.js"></script>
-    </body>
 </html>
