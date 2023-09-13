@@ -55,3 +55,22 @@ messageForm.addEventListener("submit", function(e) {
     
     messageForm.reset(); // reset form fields after submitting
 });
+
+let githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/xkevinramos/repos');
+githubRequest.send();
+
+githubRequest.onload = function () {
+    let repositories = JSON.parse(githubRequest.responseText);
+
+    let projectSection = document.getElementById("projects");
+    let projectList = projectSection.querySelector("ul");
+
+    // populate HTML project section
+    for(let i = 0; i < repositories.length; i++) {
+        let project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+
+};
