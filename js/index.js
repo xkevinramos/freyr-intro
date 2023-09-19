@@ -65,7 +65,8 @@ fetch("https://api.github.com/users/xkevinramos/repos").then(res => {
         // populate HTML project section
         for(let i = 0; i < repositories.length; i++) {
             let project = document.createElement("li");
-            project.innerText = repositories[i].name;
+            //project.innerText = repositories[i].name;
+            project.innerHTML = `<a href="https://github.com/xkevinramos/${repositories[i].name}">${repositories[i].name}</a>`
             projectList.appendChild(project);
         }
     });
