@@ -202,9 +202,9 @@ a:link {
     }
 }
 
-/* messages section disappears if empty */
+/* messages section disappears if it empty */
 #messages:has(ul:empty) {
     display: none;
-  }
+}
 
   
